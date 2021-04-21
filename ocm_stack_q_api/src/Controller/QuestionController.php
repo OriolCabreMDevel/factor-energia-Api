@@ -53,7 +53,9 @@
              if($countdate===3){
                 //i could use some sorting system but kiss rule 
                 $response = checkdate($splitedDate[1],$splitedDate[2],$splitedDate[0]);   
-                
+                if($response==false){
+                    $response = checkdate($splitedDate[0],$splitedDate[2],$splitedDate[1]);   
+                }
              }else{
      
                  $response=false;
