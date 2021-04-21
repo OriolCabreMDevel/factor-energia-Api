@@ -1,0 +1,43 @@
+1 hello there ... look for the comments in the code.
+
+2 i had litle problem with the scope of that exerciece at the begining, for me it's easy to overthink.
+  the description did not help it's a litle vague, any way applay kiss rule,
+  this api  shares json from another api with few filters , order changes that kind of stuff but not rocket sinece sure.
+  there is little data verification and thats all.
+  	
+  
+
+
+3 this project is made in symfony 5 (becouse i don't know much about laravel and Yii2) and i did not touch any other file than the controller it's simple. 
+	    
+
+4 dependecies of the project in symfony 4:
+
+		symfony/orm-pack
+		doctrine/annotations
+ 		symfony/http-client
+
+
+5 routes :
+Only GET method
+
+	/api/order/ : slug = "asc"||"desc"
+
+	/api/tagged : slug = [ "asc"||"desc", "tag" ]
+	
+	/api/tagged-latest-activity/ : slug = [ "asc"||"desc", "tag"]
+	
+	/api/latest-date/ : slug = [ "asc"||"desc", from_date(YYY:MM:DD) ]
+
+	/api/from-date-to-date/ : slug = ["asc"||"desc", from_date(YYY:MM:DD ), to_date(YYY:MM:DD )] 
+	
+	/api/tag-sorted-by-votes/: slug = ["asc"||"desc",tag,max(int),min(int)] 
+
+
+
+	
+access with postman or like.
+
+	
+	
+		
